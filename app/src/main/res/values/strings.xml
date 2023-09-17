@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TicTac</string>
+    <string name="timerVal">00:00</string>
+    <string name="start_stop_time_button">Start Time</string>
+    <string name="time_tracker">Time Tracker</string>
+    <string name="choose_project">Choose project</string>
+    <string name="choose_activity">Choose activity</string>
+
+    <string-array name="list_of_projects">
+        <item>Programmering</item>
+        <item>Målning</item>
+        <item>Banrpassning</item>
+        <item>Renovering</item>
+    </string-array>
+    <string-array name="list_of_activities">
+        <item>Måla hall</item>
+        <item>Måla kök</item>
+    </string-array>
+</resources>

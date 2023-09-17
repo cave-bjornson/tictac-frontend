@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_fragment"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner_month"
+        android:layout_width="374dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/cardbackground" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/summary_recycler_view"
+        android:layout_width="382dp"
+        android:layout_height="424dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/totalTimeHeaderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:fontFamily="@font/source_sans_pro_bold"
+            android:text="Total reported time for @{month}"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalTimeTextView"
+            android:layout_width="189dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/source_sans_pro_bold"
+            android:text="189"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="251dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/white"
+        android:clickable="false"
+
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:text="SUBMIT FOR APPROVAL" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
